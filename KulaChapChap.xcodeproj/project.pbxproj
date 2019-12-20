@@ -17,6 +17,7 @@
 		0CBFDF0723AA9E4700B7C381 /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFDF0523AA9E4700B7C381 /* Menu.swift */; };
 		0CBFDF0823AA9E4700B7C381 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFDF0623AA9E4700B7C381 /* Order.swift */; };
 		0CBFDF0A23AA9E7600B7C381 /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 0CBFDF0923AA9E7600B7C381 /* menu.json */; };
+		0CBFDF0C23AAB67100B7C381 /* ItemsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFDF0B23AAB67100B7C381 /* ItemsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		0CBFDF0523AA9E4700B7C381 /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		0CBFDF0623AA9E4700B7C381 /* Order.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
 		0CBFDF0923AA9E7600B7C381 /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
+		0CBFDF0B23AAB67100B7C381 /* ItemsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				0CBFDF0623AA9E4700B7C381 /* Order.swift */,
 				0CBFDF0923AA9E7600B7C381 /* menu.json */,
 				0CBFDEF323AA9E0500B7C381 /* ContentView.swift */,
+				0CBFDF0B23AAB67100B7C381 /* ItemsView.swift */,
 				0CBFDEF523AA9E0800B7C381 /* Assets.xcassets */,
 				0CBFDEFA23AA9E0800B7C381 /* LaunchScreen.storyboard */,
 				0CBFDEFD23AA9E0800B7C381 /* Info.plist */,
@@ -161,6 +164,7 @@
 			files = (
 				0CBFDF0823AA9E4700B7C381 /* Order.swift in Sources */,
 				0CBFDEF023AA9E0500B7C381 /* AppDelegate.swift in Sources */,
+				0CBFDF0C23AAB67100B7C381 /* ItemsView.swift in Sources */,
 				0CBFDEF223AA9E0500B7C381 /* SceneDelegate.swift in Sources */,
 				0CBFDEF423AA9E0500B7C381 /* ContentView.swift in Sources */,
 				0CBFDF0423AA9E3200B7C381 /* Helper.swift in Sources */,
