@@ -9,9 +9,11 @@
 import SwiftUI
 
 struct ItemDetailView: View {
+    @EnvironmentObject var order:Order
     let item: MenuItem
     var body: some View {
         VStack{
+            
             ZStack(alignment: .bottomTrailing){
                 Image(item.mainImage)
                 Text("Photo:\(item.photoCredit)")
@@ -24,7 +26,24 @@ struct ItemDetailView: View {
             
             Text(item.description)
                 .padding()
+            Button(action: {
+                 self.order.add(item:self.item)
+            }){
+                Text("Order now")
+                .fontWeight(.bold)
+                .font(.headline)
+                .foregroundColor(.blue)
+                .padding()
+                .overlay(
+                    Capsule(style: .continuous)
+                        .stroke(Color.blue, lineWidth: 2)
+                )
+            }
+            
+
+    
+
             Spacer()
-        }.navigationBarTitle(Text(item.name), displayMode: .inline)
+    }.navigationBarTitle(Text(item.name), displayMode: .inline)
     }
 }
