@@ -39,10 +39,6 @@ struct ItemDetailView: View {
                         .stroke(Color.blue, lineWidth: 2)
                 )
             }
-            
-
-    
-
             Spacer()
     }.navigationBarTitle(Text(item.name), displayMode: .inline)
     }
