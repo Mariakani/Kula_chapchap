@@ -22,7 +22,7 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationBarTitle("Menu")
+            .navigationBarTitle("Kula na Watu's Menu")
             .listStyle(GroupedListStyle())
         }
     }

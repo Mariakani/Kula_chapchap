@@ -21,6 +21,7 @@
 		0CBFDF1223AD5E5D00B7C381 /* ItemDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFDF1123AD5E5D00B7C381 /* ItemDetailView.swift */; };
 		0CBFDF1423AEB5FC00B7C381 /* myOrders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFDF1323AEB5FC00B7C381 /* myOrders.swift */; };
 		0CBFDF1623AEBA9F00B7C381 /* AppMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFDF1523AEBA9F00B7C381 /* AppMainView.swift */; };
+		0CBFDF1823B2A2EB00B7C381 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFDF1723B2A2EB00B7C381 /* CheckoutView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		0CBFDF1123AD5E5D00B7C381 /* ItemDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemDetailView.swift; sourceTree = "<group>"; };
 		0CBFDF1323AEB5FC00B7C381 /* myOrders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myOrders.swift; sourceTree = "<group>"; };
 		0CBFDF1523AEBA9F00B7C381 /* AppMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainView.swift; sourceTree = "<group>"; };
+		0CBFDF1723B2A2EB00B7C381 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				0CBFDF1123AD5E5D00B7C381 /* ItemDetailView.swift */,
 				0CBFDF1323AEB5FC00B7C381 /* myOrders.swift */,
 				0CBFDF1523AEBA9F00B7C381 /* AppMainView.swift */,
+				0CBFDF1723B2A2EB00B7C381 /* CheckoutView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0CBFDF0823AA9E4700B7C381 /* Order.swift in Sources */,
+				0CBFDF1823B2A2EB00B7C381 /* CheckoutView.swift in Sources */,
 				0CBFDF1623AEBA9F00B7C381 /* AppMainView.swift in Sources */,
 				0CBFDEF023AA9E0500B7C381 /* AppDelegate.swift in Sources */,
 				0CBFDF0C23AAB67100B7C381 /* ItemsView.swift in Sources */,
