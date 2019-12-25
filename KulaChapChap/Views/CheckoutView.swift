@@ -51,7 +51,7 @@ struct CheckoutView: View {
 
             Spacer(minLength: 20)
            Spacer()
-                Section(header: Text("Your total amount is :  $\(totalPrice, specifier: "%.2f")")){
+                Section(header: Text("Your total is: $\(totalPrice, specifier: "%.2f")")){
             Button(action: {
                 self.showAlert.toggle()
                        }){
@@ -66,8 +66,8 @@ struct CheckoutView: View {
                            )
                        }
             }
-                .font(.caption)
-            // Spacer()
+                .font(.largeTitle)
+            
         }
         .navigationBarTitle(Text("Payment"), displayMode: .inline)
             .alert(isPresented: $showAlert){
