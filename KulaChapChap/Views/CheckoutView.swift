@@ -71,7 +71,13 @@ struct CheckoutView: View {
         }
         .navigationBarTitle(Text("Payment"), displayMode: .inline)
             .alert(isPresented: $showAlert){
-                Alert(title: Text("✅"), message: Text("Order successfully checkout, Your total amount was $: \(totalPrice, specifier: "%.2f") - Thanks you for your loyalty to Kula na Watu ltd "), dismissButton: .default(Text("Ok")) )
+                Alert(title: Text("✅"), message: Text("Order successfully checkout, Your total amount was $: \(totalPrice, specifier: "%.2f") - Thanks you for your loyalty to Kula na Watu ltd "), dismissButton: .default((Text("Ok")), action: {
+                    self.order.items.removeAll()
+                    NavigationLink(destination: ContentView()){
+                        Text("Return to main page")
+                    }
+                }) )
+            
             }
        
     }

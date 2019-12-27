@@ -22,6 +22,8 @@
 		0CBFDF1423AEB5FC00B7C381 /* myOrders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFDF1323AEB5FC00B7C381 /* myOrders.swift */; };
 		0CBFDF1623AEBA9F00B7C381 /* AppMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFDF1523AEBA9F00B7C381 /* AppMainView.swift */; };
 		0CBFDF1823B2A2EB00B7C381 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFDF1723B2A2EB00B7C381 /* CheckoutView.swift */; };
+		0CBFDF1A23B3E1FD00B7C381 /* wishlist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFDF1923B3E1FC00B7C381 /* wishlist.swift */; };
+		0CBFDF1C23B3EA0500B7C381 /* WishListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBFDF1B23B3EA0500B7C381 /* WishListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		0CBFDF1323AEB5FC00B7C381 /* myOrders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myOrders.swift; sourceTree = "<group>"; };
 		0CBFDF1523AEBA9F00B7C381 /* AppMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMainView.swift; sourceTree = "<group>"; };
 		0CBFDF1723B2A2EB00B7C381 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		0CBFDF1923B3E1FC00B7C381 /* wishlist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wishlist.swift; sourceTree = "<group>"; };
+		0CBFDF1B23B3EA0500B7C381 /* WishListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 				0CBFDF1323AEB5FC00B7C381 /* myOrders.swift */,
 				0CBFDF1523AEBA9F00B7C381 /* AppMainView.swift */,
 				0CBFDF1723B2A2EB00B7C381 /* CheckoutView.swift */,
+				0CBFDF1B23B3EA0500B7C381 /* WishListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -112,6 +117,7 @@
 			children = (
 				0CBFDF0523AA9E4700B7C381 /* Menu.swift */,
 				0CBFDF0623AA9E4700B7C381 /* Order.swift */,
+				0CBFDF1923B3E1FC00B7C381 /* wishlist.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -206,6 +212,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CBFDF1A23B3E1FD00B7C381 /* wishlist.swift in Sources */,
 				0CBFDF0823AA9E4700B7C381 /* Order.swift in Sources */,
 				0CBFDF1823B2A2EB00B7C381 /* CheckoutView.swift in Sources */,
 				0CBFDF1623AEBA9F00B7C381 /* AppMainView.swift in Sources */,
@@ -216,6 +223,7 @@
 				0CBFDEF423AA9E0500B7C381 /* ContentView.swift in Sources */,
 				0CBFDF0423AA9E3200B7C381 /* Helper.swift in Sources */,
 				0CBFDF1423AEB5FC00B7C381 /* myOrders.swift in Sources */,
+				0CBFDF1C23B3EA0500B7C381 /* WishListView.swift in Sources */,
 				0CBFDF0723AA9E4700B7C381 /* Menu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -16,10 +16,18 @@ struct AppMainView: View {
                     Image(systemName: "list.dash")
                     Text("Menu")
             }
+
             myOrders()
             .tabItem{
                     Image(systemName: "square.and.pencil")
                     Text("Orders")
+            }
+            
+            WishListView()
+                .tabItem{
+                   Image(systemName:"")
+                    Text("WishList")
+    
             }
         }
     }

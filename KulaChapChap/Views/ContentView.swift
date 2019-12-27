@@ -21,11 +21,14 @@ struct ContentView: View {
                         }
                     }
                 }
+                .font(.largeTitle)
+    
             }
             .navigationBarTitle("Kula na Watu's Menu")
             .listStyle(GroupedListStyle())
+
         }
-    }
+   }
 }
 
 struct ContentView_Previews: PreviewProvider {
