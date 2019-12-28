@@ -9,11 +9,13 @@
 import SwiftUI
 
 struct ItemsView: View {
+     @EnvironmentObject var order:Order
     static let colors: [String: Color] = ["D" :.purple, "G":.black, "N": .red, "S": .blue, "V": .green]
     let item: MenuItem
+    @State private var isActive = false
     var body: some View{
-       // NavigationLink(destination: ItemDetailView(item: item)){
-        VStack(alignment: .leading, spacing: 5){
+        VStack{
+            
             HStack(alignment: .top){
                 VStack(alignment: .leading){
                     Text(item.name)
@@ -53,17 +55,13 @@ struct ItemsView: View {
                                         .font(.caption)
                                         .fontWeight(.black)
                                         .padding(5)
-                
                                         .background(ItemsView.self.colors[restriction, default: .black])
                                         .clipShape(Circle())
                                         .foregroundColor(.white)
                                 }
                  Spacer()
-                
-                
               Button(action:{
-                //Naviagtionbutton(
-                //NavigationLink(destination: ItemDetailView(item: item))
+                self.isActive.toggle()
                      }){
                          Text("More details")
                             .fontWeight(.medium)
@@ -75,32 +73,11 @@ struct ItemsView: View {
                              Capsule(style: .continuous)
                                 .stroke(Color.green.opacity(0.95), lineWidth: 1)
                          )
-                     }
+              }.sheet(isPresented: self.$isActive) {
+                ItemDetailView(item: self.item)
+                    .environmentObject(self.order)
+                }
             }
         }
-        //            HStack{
-        //                Image(item.thumbnailImage)
-        //                    .clipShape(Circle())
-        //                    .overlay(Circle().stroke(Color.gray, lineWidth: 2))
-        //                VStack(alignment: .leading, spacing: 10){
-        //                    Text(item.name)
-        //                        .font(.headline)
-        //                    Text("$ \(item.price)")
-        //                }
-        //                Spacer()
-        //                ForEach(item.restrictions,  id: \.self){ restriction in
-        //                    Text(restriction)
-        //                        .font(.caption)
-        //                        .fontWeight(.black)
-        //                        .padding(5)
-        //
-        //                        .background(ItemsView.self.colors[restriction, default: .black])
-        //                        .clipShape(Circle())
-        //                        .foregroundColor(.white)
-        //                }
-        //            }
-   // }
-        
     }
 }
-

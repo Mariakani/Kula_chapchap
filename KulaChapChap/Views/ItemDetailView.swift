@@ -32,11 +32,11 @@ struct ItemDetailView: View {
                 Text("Order now")
                     .fontWeight(.bold)
                     .font(.headline)
-                    .foregroundColor(.purple)
+                    .foregroundColor(.green)
                     .padding()
                     .overlay(
                         Capsule(style: .continuous)
-                            .stroke(Color.purple, lineWidth: 2)
+                            .stroke(Color.green, lineWidth: 1)
                 )
             }
             Spacer()
