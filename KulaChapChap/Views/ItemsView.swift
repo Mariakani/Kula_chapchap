@@ -10,6 +10,8 @@ import SwiftUI
 
 struct ItemsView: View {
      @EnvironmentObject var order:Order
+     @EnvironmentObject var wishlist:wishList
+    
     static let colors: [String: Color] = ["D" :.purple, "G":.black, "N": .red, "S": .blue, "V": .green]
     let item: MenuItem
     @State private var isActive = false
@@ -59,23 +61,24 @@ struct ItemsView: View {
                                         .clipShape(Circle())
                                         .foregroundColor(.white)
                                 }
-                 Spacer()
-              Button(action:{
-                self.isActive.toggle()
-                     }){
-                         Text("More details")
-                            .fontWeight(.medium)
-                         .font(.caption)
-                         .foregroundColor(.green)
-                         .padding(4)
+                Spacer()
+                Button(action:{
+                    self.isActive.toggle()
+                }){
+                    Text("More details")
+                        .fontWeight(.medium)
+                        .font(.caption)
+                        .foregroundColor(.green)
+                        .padding(4)
                         .cornerRadius(10)
-                         .overlay(
-                             Capsule(style: .continuous)
+                        .overlay(
+                            Capsule(style: .continuous)
                                 .stroke(Color.green.opacity(0.95), lineWidth: 1)
-                         )
-              }.sheet(isPresented: self.$isActive) {
+                    )
+                }.sheet(isPresented: self.$isActive) {
                 ItemDetailView(item: self.item)
                     .environmentObject(self.order)
+                    .environmentObject(self.wishlist)
                 }
             }
         }

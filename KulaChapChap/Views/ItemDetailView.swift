@@ -10,10 +10,11 @@ import SwiftUI
 
 struct ItemDetailView: View {
     @EnvironmentObject var order:Order
+    @EnvironmentObject var wishlist:wishList
     let item: MenuItem
     var body: some View {
-        Form{
-    
+        VStack{
+            
             ZStack(alignment: .bottomTrailing){
                 Image(item.mainImage)
                 Text("Photo:\(item.photoCredit)")
@@ -25,40 +26,42 @@ struct ItemDetailView: View {
             }
             
             Text(item.description)
-                .padding()
-            
-            
+                .padding(5)
             HStack{
-            Button(action: {
-                self.order.add(item:self.item)
-            }){
-                Text("Order now")
-                    .fontWeight(.bold)
-                    .font(.headline)
-                    .foregroundColor(.green)
-                    .padding()
-                    .overlay(
-                        Capsule(style: .continuous)
-                            .stroke(Color.green, lineWidth: 1)
-                )
-            }
-            Spacer()
                 
+                
+                //create order now buttons
                 Button(action: {
-                               self.order.add(item:self.item)
-                           }){
-                               Text("Add to Wishlist")
-                                   .fontWeight(.bold)
-                                   .font(.headline)
-                                   .foregroundColor(.green)
-                                   .padding()
-                                   .overlay(
-                                       Capsule(style: .continuous)
-                                           .stroke(Color.green, lineWidth: 1)
-                               )
-                           }
+                    //button actions
+                    self.order.add(item:self.item)
+                }){
+                    //button label customization
+                    Text("Order now")
+                        .fontWeight(.bold)
+                        .font(.headline)
+                        .foregroundColor(.green)
+                        .padding()
+                        .overlay(
+                            Capsule(style: .continuous)
+                                .stroke(Color.green, lineWidth: 1))
+                }
+                
+                //create a space between the two buttons
+                Spacer()
+                Button(action: {
+                    self.wishlist.add(item:self.item)
+                }){
+                    Text("Add to Favorites")
+                        .fontWeight(.bold)
+                        .font(.headline)
+                        .foregroundColor(.green)
+                        .padding()
+                        .overlay(
+                            Capsule(style: .continuous)
+                                .stroke(Color.green, lineWidth: 1))
+                }
+            }
+            //.navigationBarTitle(Text(item.name), displayMode: .inline)
         }
-        
-    }.navigationBarTitle(Text(item.name), displayMode: .inline)
-}
+    }
 }

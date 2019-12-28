@@ -11,7 +11,6 @@ import SwiftUI
 struct ContentView: View {
     let menu = Bundle.main.decode([MenuSection].self, from: "menu.json")
     var body: some View {
-        
         NavigationView{
             List{
                 ForEach(menu){section in
@@ -26,25 +25,16 @@ struct ContentView: View {
                             Capsule(style: .continuous)
                                 .stroke(Color.gray.opacity(0.95), lineWidth: 0.5)
                         )
-            
                     ){
                         ForEach(section.items){item in
                             ItemsView(item: item)
                         }
                     }
                 }
-
-    
             }
             .navigationBarTitle("Menu")
                 
             .listStyle(GroupedListStyle())
         }
    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
 }

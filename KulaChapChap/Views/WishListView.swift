@@ -9,13 +9,31 @@
 import SwiftUI
 
 struct WishListView: View {
+    @EnvironmentObject var wishlist: wishList
     var body: some View {
-        Text("Coming soon..")
+        NavigationView{
+            List{
+                Section{
+                    ForEach(wishlist.wishListItems){ item in
+                        HStack(alignment: .top, spacing: 5){
+                            Image(item.thumbnailImage)
+                                .resizable()
+                                .clipShape(Circle())
+                                .overlay(Circle().stroke(Color.gray, lineWidth: 2))
+                            VStack{
+                                Text(item.name)
+                                Text("$\(item.price)")
+                            }
+                        }
+                    }.onDelete(perform: deleteItems)
+                }
+            }
+            .navigationBarTitle("My Favourites")
+            .listStyle(GroupedListStyle())
+            .navigationBarItems(trailing: EditButton())
+        }
     }
-}
-
-struct WishListView_Previews: PreviewProvider {
-    static var previews: some View {
-        WishListView()
+    func deleteItems(at offsets: IndexSet){
+        wishlist.wishListItems.remove(atOffsets: offsets)
     }
 }

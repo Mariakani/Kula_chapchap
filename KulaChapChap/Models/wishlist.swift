@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-class wishList: ObservableObject{
+class wishList : ObservableObject{
     @Published var wishListItems = [MenuItem]()
     var total: Int {
         if wishListItems.count > 0 {

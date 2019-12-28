@@ -26,8 +26,7 @@ struct AppMainView: View {
             WishListView()
                 .tabItem{
                    Image(systemName:"")
-                    Text("WishList")
-    
+                    Text("My favorites")
             }
         }
     }
