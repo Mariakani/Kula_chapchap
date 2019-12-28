@@ -12,7 +12,7 @@ struct ItemDetailView: View {
     @EnvironmentObject var order:Order
     let item: MenuItem
     var body: some View {
-        VStack{
+        Form{
     
             ZStack(alignment: .bottomTrailing){
                 Image(item.mainImage)
@@ -26,6 +26,9 @@ struct ItemDetailView: View {
             
             Text(item.description)
                 .padding()
+            
+            
+            HStack{
             Button(action: {
                 self.order.add(item:self.item)
             }){
@@ -40,7 +43,22 @@ struct ItemDetailView: View {
                 )
             }
             Spacer()
-        }.navigationBarTitle(Text(item.name), displayMode: .inline)
+                
+                Button(action: {
+                               self.order.add(item:self.item)
+                           }){
+                               Text("Add to Wishlist")
+                                   .fontWeight(.bold)
+                                   .font(.headline)
+                                   .foregroundColor(.green)
+                                   .padding()
+                                   .overlay(
+                                       Capsule(style: .continuous)
+                                           .stroke(Color.green, lineWidth: 1)
+                               )
+                           }
+        }
         
-    }
+    }.navigationBarTitle(Text(item.name), displayMode: .inline)
+}
 }

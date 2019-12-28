@@ -34,7 +34,7 @@ struct CheckoutView: View {
                     }
                 }
                 .pickerStyle(SegmentedPickerStyle())
-                .background(Color.purple)
+                .background(Color.green)
             }
             Section{
                 Text("Choose method of  payment")
@@ -46,7 +46,7 @@ struct CheckoutView: View {
                     }
                 }
                 .pickerStyle(SegmentedPickerStyle())
-                .background(Color.purple)
+                .background(Color.green)
                // .offset(x: 10, y: 10)
 
             Spacer(minLength: 20)
@@ -58,11 +58,13 @@ struct CheckoutView: View {
                            Text("Checkout")
                            .fontWeight(.bold)
                            .font(.headline)
-                           .foregroundColor(.purple)
-                           .padding()
+                           .foregroundColor(.white)
+                           .padding(5)
+                           .background(Color.green)
+                        .cornerRadius(10)
                            .overlay(
                                Capsule(style: .continuous)
-                                .stroke(Color.purple, lineWidth: 2)
+                                .stroke(Color.green, lineWidth: 1)
                            )
                        }
             }
