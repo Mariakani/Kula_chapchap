@@ -22,7 +22,16 @@ _which allow navigation from view to view_
 
 
   * __ability to select items to buy and checkout__
-  * __payment functionality: adding tips for great serving, choose on what method to clear the bills__
+  * __payment functionality__: 
+     * adding tips for great serving
+     * choose on what method to clear the bills
+   
 <img width="363" alt="Screen Shot 2019-12-28 at 4 52 06 AM" src="https://user-images.githubusercontent.com/28717628/71541968-589add00-292e-11ea-879f-ad36905d2387.png">
 
 <img width="363" alt="Screen Shot 2019-12-28 at 4 52 30 AM" src="https://user-images.githubusercontent.com/28717628/71541965-4de04800-292e-11ea-9470-6b7231d60e0a.png">
+
+
+* __wishlisting items functionality__: 
+     * Add items to a wishlist
+     * Remove items from a wishlist 
+     
