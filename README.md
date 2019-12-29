@@ -14,7 +14,7 @@ __These are some swiftUI fundamental learned:__
 
   * **Navigation View and NavigationLink**
 
-_which allow navigation from view to view_
+_to navigation from view to view_
 
 <img width="1435" alt="Screen Shot 2019-12-28 at 4 44 53 AM" src="https://user-images.githubusercontent.com/28717628/71541894-82073900-292d-11ea-8518-f9d7720c3ec0.png">
 
