@@ -12,7 +12,7 @@ __These are some swiftUI fundamental learned:__
 
 * __This simple app has basic functionality like any other ordering app__
 
-* **Navigation View and NavigationLink**
+  * **Navigation View and NavigationLink**
 
 _which allow navigation from view to view_
 
@@ -21,8 +21,8 @@ _which allow navigation from view to view_
 <img width="363" alt="Screen Shot 2019-12-28 at 4 53 20 AM" src="https://user-images.githubusercontent.com/28717628/71541959-415bef80-292e-11ea-85bc-3f41fa75c3ea.png">
 
 
-* _ability to select items to buy and checkout_
-* _payment functionality: adding tips for great serving, choose on what method to clear the bills_
+  * _ability to select items to buy and checkout_
+  * _payment functionality: adding tips for great serving, choose on what method to clear the bills_
 <img width="363" alt="Screen Shot 2019-12-28 at 4 52 06 AM" src="https://user-images.githubusercontent.com/28717628/71541968-589add00-292e-11ea-879f-ad36905d2387.png">
 
 <img width="363" alt="Screen Shot 2019-12-28 at 4 52 30 AM" src="https://user-images.githubusercontent.com/28717628/71541965-4de04800-292e-11ea-9470-6b7231d60e0a.png">
