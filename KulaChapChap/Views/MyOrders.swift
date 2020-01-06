@@ -13,7 +13,7 @@ struct myOrders: View {
     var body: some View {
         NavigationView{
             List{
-               Section{
+              // Section{
                     ForEach(order.items){ order in
                         HStack(alignment: .top, spacing: 5){
                             Image(order.thumbnailImage)
@@ -26,7 +26,7 @@ struct myOrders: View {
                             }
                         }
                     }.onDelete(perform: deleteItems)
-               }
+              // }
                 Section{
                     NavigationLink(destination: CheckoutView()){
                          Text("Place order")
