@@ -20,6 +20,7 @@ struct myOrders: View {
                                 .resizable()
                                 .clipShape(Circle())
                                 .overlay(Circle().stroke(Color.gray, lineWidth: 2))
+                            Spacer()
                             VStack{
                                 Text(order.name)
                                 Text("$\(order.price)")
