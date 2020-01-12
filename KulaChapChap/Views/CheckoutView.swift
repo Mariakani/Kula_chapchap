@@ -47,8 +47,6 @@ struct CheckoutView: View {
                 }
                 .pickerStyle(SegmentedPickerStyle())
                 .background(Color.green)
-               // .offset(x: 10, y: 10)
-
             Spacer(minLength: 20)
            Spacer()
                 Section(header: Text("Your total is: $\(totalPrice, specifier: "%.2f")")){

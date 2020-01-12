@@ -13,20 +13,9 @@ struct WishListView: View {
     var body: some View {
         NavigationView{
             List{
-                Section{
-                    ForEach(wishlist.wishListItems){ item in
-                        HStack(alignment: .top, spacing: 5){
-                            Image(item.thumbnailImage)
-                                .resizable()
-                                .clipShape(Circle())
-                                .overlay(Circle().stroke(Color.gray, lineWidth: 2))
-                            VStack{
-                                Text(item.name)
-                                Text("$\(item.price)")
-                            }
-                        }
-                    }.onDelete(perform: deleteItems)
-                }
+                ForEach(wishlist.wishListItems){ item in
+                    WishlistItemRow(item: item)
+                }.onDelete(perform: deleteItems)
             }
             .navigationBarTitle("My Favourites")
             .listStyle(GroupedListStyle())
@@ -37,3 +26,42 @@ struct WishListView: View {
         wishlist.wishListItems.remove(atOffsets: offsets)
     }
 }
+
+
+
+
+
+//view for the wishlist
+struct WishlistItemRow: View {
+    let item: MenuItem
+    var body: some View{
+        HStack{
+            Image(item.thumbnailImage)
+                .clipShape(Circle())
+                .overlay(Circle().stroke(Color.gray, lineWidth: 2))
+            VStack(alignment: .leading){
+                Text(item.name)
+                    .font(.headline)
+                Text("$\(item.price)")
+            }
+            
+            Spacer()
+            Button(action:{
+                //perform action that will remove items from the wishlist
+                //self.deleteItems
+            }){
+                Text("Remove")
+                    .fontWeight(.medium)
+                    .font(.caption)
+                    .foregroundColor(.green)
+                    .padding(4)
+                    .cornerRadius(10)
+                    .overlay(
+                        Capsule(style: .continuous)
+                            .stroke(Color.green.opacity(0.95), lineWidth: 1)
+                )
+            }
+        }
+    }
+}
+
