@@ -55,12 +55,6 @@ struct myOrders: View {
     }
 }
 
-
-
-
-
-
-
 struct OrderItemRow: View{
     let item: MenuItem
     var body: some View{
