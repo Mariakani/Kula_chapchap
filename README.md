@@ -7,17 +7,9 @@ __These are some swiftUI fundamental learned:__
     * _Hstack(Horizontal stackview)_
     * _Zstack (overlaying View)_
     * _TabView(TabBarView)_
- <img width="1435" alt="Screen Shot 2019-12-28 at 4 43 50 AM" src="https://user-images.githubusercontent.com/28717628/71541879-55ebb800-292d-11ea-88b8-fdd629eca69b.png">
-
-
 * __This simple app has basic functionality like any other ordering app__
-
   * **Navigation View and NavigationLink**
-
-_to navigation from view to view_
-
-<img width="1435" alt="Screen Shot 2019-12-28 at 4 44 53 AM" src="https://user-images.githubusercontent.com/28717628/71541894-82073900-292d-11ea-8518-f9d7720c3ec0.png">
-
+_to navigation from view to view
   * __ability to select items to buy and checkout__
   * __payment functionality__: 
      * adding tips for great serving
